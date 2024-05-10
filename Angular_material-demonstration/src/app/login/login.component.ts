@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit{
     let auth = this.authService.login(username, password);
     if(auth==true){
       console.log(auth);
-      this.router.navigateByUrl("/admin/students");
+      this.router.navigateByUrl("/admin/dashboard");
     }
     else { // to use snackBar, u must use a constructor !
       this.snackBar.open('Authentication failed. Please check your credentials.', 'Dismiss',  {

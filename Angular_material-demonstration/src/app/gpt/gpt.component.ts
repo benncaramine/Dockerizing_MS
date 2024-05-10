@@ -31,6 +31,7 @@ export class GptComponent implements OnInit {
   messages = [
     {role: "system", content: "Hello !"}
   ];
+
   result: any;
 
   constructor(private fb: FormBuilder, private httpClient: HttpClient) {
@@ -41,11 +42,10 @@ export class GptComponent implements OnInit {
       query: this.fb.control("")
     })
   }
-
   handleAskGPT() {
     let url = "https://api.openai.com/v1/chat/completions";
     let httpHeaders = new HttpHeaders()
-      .set("Authorization", "Bearer sk-proj-g8KdlAtxBIBjfeERJsQjT3BlbkFJC7qOytXU6W6Q5QQJcBL6")
+      .set("Authorization", "Bearer sk-proj-WXc3zaWneWAHRrsLCVdaT3BlbkFJM88C0HWkyuGZfw6Z0VU5")
     let payload = {
       model: "gpt-3.5-turbo",
       messages: this.messages
@@ -61,5 +61,7 @@ export class GptComponent implements OnInit {
       })
   }
 }
+
+
 
 

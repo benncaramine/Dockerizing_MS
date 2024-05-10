@@ -33,6 +33,7 @@ mat-card {
 mat-form-field {
   margin-top: 20px;
   width: 100%;
+  border-radius: 60px;
 }
 
 /* Style the button */
