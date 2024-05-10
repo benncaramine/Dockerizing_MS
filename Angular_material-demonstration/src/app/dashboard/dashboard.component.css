@@ -1,0 +1,21 @@
+/* Styles for mat-form-field with appearance="fill" */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Styles for input inside mat-form-field */
+.mat-input-element {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Change to your desired background color */
+  transition: background-color 0.3s ease;
+}
+
+.mat-input-element:focus {
+  outline: none;
+  background-color: #e0e0e0; /* Change to your desired focus background color */
+}

@@ -1,0 +1,11 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 350px;
+  margin-right: 350px;
+}
+

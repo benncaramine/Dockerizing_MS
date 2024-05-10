@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+input[type="number"], button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F3755A;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.6s;
+}
+
+input[type="number"]:focus, button:focus {
+  outline: none;
+}
+
+input[type="number"]:hover, button:hover {
+  background-color: #D74E31;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: dodgerblue;
+}
+.copy-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

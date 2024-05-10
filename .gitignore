@@ -1,0 +1,46 @@
+# Compiled Java classes
+target/
+bin/
+
+# Compiled Angular files
+dist/
+
+# Node modules
+node_modules/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Maven build directory
+mvnw
+mvnw.cmd
+.mvn/
+
+# Gradle files
+gradle/
+build/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Generated Spring Boot configuration files
+spring-boot-configuration-metadata.json
+HELP.md
+build/
+
+# Angular CLI configuration files
+.angular-config.json
+.angular-cli.json

@@ -1,0 +1,23 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()">
+        <div class="mb-3">
+          <label class="form-label">How can I help you today ?</label>
+          <textarea formControlName="query" class="form-control" rows="3"></textarea>
+        </div>
+        <button class="btn btn-success">Ask me !</button>
+      </form><br>
+      <div class="alert alert-success">
+<!--           <pre>{{result|json}}</pre>-->
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let choice of result.choices">
+            {{choice.message.content}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
