@@ -37,6 +37,7 @@ import { GptComponent } from './gpt/gpt.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {NgForOf, NgIf} from "@angular/common";
 import { MsidComponent } from './msid/msid.component';
+import {RegisterComponent} from "./register/register.component";
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MsidComponent } from './msid/msid.component';
     LoadStudentsComponent,
     LoadPaymentsComponent,
     MsidComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

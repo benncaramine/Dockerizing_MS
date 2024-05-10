@@ -30,7 +30,7 @@ public class CustomerServiceApplication {
 							Customer.builder()
 									.firstName("Name " + i)
 									.lastName("LName " + i)
-									.email("name" + i + "@gmail.com")
+									.email("name" + i + "@hps-worldwide.com")
 									.build()
 					);
 				}
