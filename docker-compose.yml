@@ -70,10 +70,4 @@ services:
     depends_on:
       enset-ebank-config-service:
         condition: service_healthy
-  front-send-angular:
-    build: ./angular-front-end
-    container_name: front-send-angular
-    ports:
-      - '82:80'
-    expose:
-      - '82'
+ 
