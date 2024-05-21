@@ -10,7 +10,7 @@
 <div class="container">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>DASHBOARD</mat-card-title>
+      <mat-card-title>ACCESS PANEL</mat-card-title>
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-content>
@@ -42,18 +42,13 @@
           <td mat-cell *matCellDef="let element"> {{element.email}} </td>
         </ng-container>
         <ng-container matColumnDef="action">
-          <th mat-header-cell *matHeaderCellDef> Edit</th>
+          <th mat-header-cell *matHeaderCellDef>Access</th>
           <td mat-cell *matCellDef="let element">
-            <button mat-icon-button color="primary" >
-              <mat-icon>edit</mat-icon>
+            <button mat-icon-button color="primary" aria-label="Accept Access">
+              <mat-icon>check_circle</mat-icon>
             </button>
-          </td>
-        </ng-container>
-        <ng-container matColumnDef="supress">
-          <th mat-header-cell *matHeaderCellDef> Delete</th>
-          <td mat-cell *matCellDef="let element">
-            <button  mat-icon-button color="warn" (click)="deleteElement(element)">
-              <mat-icon>delete_sweep</mat-icon>
+            <button mat-icon-button color="warn" aria-label="Decline Access">
+              <mat-icon>cancel</mat-icon>
             </button>
           </td>
         </ng-container>

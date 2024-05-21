@@ -36,7 +36,6 @@ export class GptComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private httpClient: HttpClient) {
   }
-
   ngOnInit() {
     this.queryFormGroup = this.fb.group({
       query: this.fb.control("")

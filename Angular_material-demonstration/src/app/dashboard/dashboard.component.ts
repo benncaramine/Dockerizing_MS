@@ -31,7 +31,7 @@ import {MatIconButton} from "@angular/material/button";
 
 export class DashboardComponent implements OnInit, AfterViewInit{
   customers : any;
-  public displayedColumns = ["id","firstName","lastName","email","action","supress"]
+  public displayedColumns = ["id","firstName","lastName","email","action"]
   @ViewChild(MatPaginator) paginator! : MatPaginator;
   @ViewChild(MatSort) sort! : MatSort;
   constructor(private http: HttpClient) {
